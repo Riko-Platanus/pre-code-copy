@@ -1,0 +1,44 @@
+/* styles.css */
+.hljs {
+  font-family: 'Sawarabi Gothic', sans-serif !important;
+}
+
+pre {
+  counter-reset: line;
+}
+pre code {
+  counter-increment: line;
+}
+.code-area {
+  position: relative;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.code-area pre {
+  margin: 0;
+}
+
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #636363;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.code-line::before {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 3em;
+  box-sizing: border-box;
+  color: #777;
+  text-align: center;
+}

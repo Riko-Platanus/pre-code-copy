@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Code</title>
+    <link rel="stylesheet" href="./themes/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css" integrity="sha512-mtXspRdOWHCYp+f4c7CkWGYPPRAhq9X+xCvJMUBVAb6pqA4U8pxhT3RWT3LP3bKbiolYL2CkL1bSKZZO4eeTew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <script src="./themes/line-numbering.js"></script>
+    <script src="./themes/copy-button.js"></script>
+</head>
+<body>
+    <p>サンプルコードを紹介します。</p>
+    <div class="code-area">
+        <button class="copy-button" onclick="copyCode()">Copy to Clipboard</button>
+        <pre><code id="codeSnippet" class="language-python">
+            def greet():
+                print("Hello, world!")
+            
+            greet()
+        </code></pre>
+    </div>
+
+
+    <!-- highlight.jsでシンタックスハイライトを実行する -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- highlight.js の初期化 -->
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
